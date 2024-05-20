@@ -6,7 +6,7 @@ WORKDIR /usr/src/app
 ENV PORT=3000
 
 # Install app dependencies
-COPY package*.json package-lock.json ./usr/src/app/
+COPY package.json package-lock.json ./
 
 ## Install npm & menghapus cache
 RUN npm install && npm cache clean --force
